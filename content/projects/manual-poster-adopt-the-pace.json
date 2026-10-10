@@ -1,0 +1,59 @@
+{
+  "id": "manual-poster-adopt-the-pace",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2025-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Adopt the Pace – Poster",
+    "description": "Poster progettato come esercizio di composizione visiva, in cui fotografia, tipografia e geometrie si combinano in un sistema coerente."
+  },
+  "category": "illustration",
+  "featured": false,
+  "hidden": false,
+  "slug": "poster-adopt-the-pace",
+  "images": [
+    {
+      "src": "manual-poster-adopt-the-pace/00.webp",
+      "width": 874,
+      "height": 1093,
+      "alt": "Poster Adopt the Pace verde e crema: foto di un bosco, titolo verticale condensato e cerchi geometrici"
+    },
+    {
+      "src": "manual-poster-adopt-the-pace/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Poster Adopt the Pace in verde e crema con foto di un bosco, titolo verticale e cerchi geometrici, e variante viola"
+    }
+  ],
+  "seo": {
+    "title": "Adopt the Pace – Poster tra bosco e geometria",
+    "seoTitle": "Poster design “Adopt the Pace”: tipografia e foto",
+    "metaDescription": "Poster “Adopt the Pace”: esercizio di composizione in cui fotografia di un bosco, tipografia condensata e geometrie circolari creano un sistema coerente.",
+    "intro": "“Adopt the Pace” è un poster nato come esercizio di composizione: fotografia, tipografia e geometrie dialogano in un unico sistema.",
+    "sections": [
+      {
+        "heading": "Rallentare, nel bosco",
+        "text": "La fotografia di un bosco attraversato dalla luce occupa il centro della composizione, mentre il titolo, in un carattere molto condensato, corre in verticale lungo il lato. Il messaggio invita a rallentare e trovare il proprio ritmo."
+      },
+      {
+        "heading": "Un sistema, due palette",
+        "text": "Cerchi sovrapposti e piccoli punti costruiscono una griglia geometrica che bilancia l’organicità della foto. Il poster è declinato in verde e crema e in una variante viola e bordeaux, per mostrare come lo stesso sistema cambi atmosfera con il colore."
+      }
+    ],
+    "keywords": [
+      "poster design",
+      "composizione grafica",
+      "tipografia",
+      "graphic design",
+      "illustrazione"
+    ],
+    "services": [
+      "Poster design",
+      "Tipografia"
+    ],
+    "client": null,
+    "sourceHash": "db2430e6e98d4f42",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:40:01.524Z"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "matteo-del-gallo-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio di Matteo Del Gallo – Graphic & Web Designer. Sito statico che si aggiorna da Behance e Instagram, con testi SEO riscritti automaticamente.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "sync:behance": "node scripts/sync-behance.mjs",
+    "sync:instagram": "node scripts/sync-instagram.mjs",
+    "sync": "npm run sync:behance && npm run sync:instagram",
+    "seo": "node scripts/seo-enhance.mjs",
+    "build": "node scripts/build.mjs",
+    "update": "npm run sync && npm run seo && npm run build",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource-variable/syne": "^5.3.0",
+    "fast-xml-parser": "^5.11.2",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.5"
+  }
+}

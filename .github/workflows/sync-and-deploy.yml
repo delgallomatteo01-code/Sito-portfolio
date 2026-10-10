@@ -1,0 +1,105 @@
+name: Aggiorna e pubblica il sito
+
+on:
+  # Ogni giorno alle 05:17 UTC (≈ 07:17 in Italia d'estate): controlla Behance e Instagram
+  schedule:
+    - cron: '17 5 * * *'
+  # Pulsante "Run workflow" nella scheda Actions
+  workflow_dispatch:
+  # A ogni modifica sul branch principale
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # per salvare nel repo i nuovi progetti e i testi SEO
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HAS_IG_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # I token Instagram durano 60 giorni: lo rinnoviamo a ogni giro.
+      # Se è presente il secret GH_ADMIN_TOKEN, il token rinnovato viene salvato nei secret.
+      - name: Rinnova token Instagram
+        if: env.HAS_IG_TOKEN == 'true'
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
+        run: |
+          NEW=$(curl -s "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${INSTAGRAM_ACCESS_TOKEN}" | jq -r '.access_token // empty')
+          if [ -n "$NEW" ]; then
+            echo "::add-mask::$NEW"
+            echo "INSTAGRAM_ACCESS_TOKEN=$NEW" >> "$GITHUB_ENV"
+            if [ -n "$GH_TOKEN" ]; then
+              gh secret set INSTAGRAM_ACCESS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY" && echo "Token salvato nei secret"
+            fi
+          else
+            echo "::warning::Rinnovo del token Instagram non riuscito (token scaduto o non valido?)"
+          fi
+
+      - name: Sincronizza Behance
+        run: npm run sync:behance
+
+      - name: Sincronizza Instagram
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ env.INSTAGRAM_ACCESS_TOKEN || secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: npm run sync:instagram
+
+      - name: Riscrivi i testi in chiave SEO (Claude)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run seo
+
+      - name: Salva i nuovi contenuti nel repository
+        run: |
+          git config user.name "portfolio-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content
+          if git diff --cached --quiet; then
+            echo "Nessun contenuto nuovo"
+          else
+            git commit -m "Contenuti: sincronizzazione automatica $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Genera il sito
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: npm run build
+
+      # Prova ad attivare GitHub Pages (sorgente: GitHub Actions) se non è ancora attivo.
+      # Se il token non ha i permessi necessari, va attivato a mano da Settings → Pages.
+      - uses: actions/configure-pages@v5
+        continue-on-error: true
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

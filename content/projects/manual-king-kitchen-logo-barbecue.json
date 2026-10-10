@@ -1,0 +1,53 @@
+{
+  "id": "manual-king-kitchen-logo-barbecue",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2024-06-01T00:00:00.000Z",
+  "original": {
+    "title": "King Kitchen",
+    "description": "Logo King Kitchen per prodotti da cucina e barbecue. Monogramma K con dettaglio a rombo, nero e oro."
+  },
+  "category": "logo",
+  "featured": false,
+  "hidden": false,
+  "slug": "king-kitchen-logo-barbecue",
+  "images": [
+    {
+      "src": "manual-king-kitchen-logo-barbecue/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Logo King Kitchen con monogramma K e rombo dorato, versioni su oro e nero, e applicazione su barbecue a gas in acciaio"
+    }
+  ],
+  "seo": {
+    "title": "King Kitchen – Logo per barbecue e cucina",
+    "seoTitle": "Logo King Kitchen: monogramma per barbecue",
+    "metaDescription": "Logo King Kitchen: monogramma K con rombo dorato, nero e oro, pensato per prodotti da cucina e barbecue. Mockup su barbecue a gas in acciaio.",
+    "intro": "Un marchio dal carattere deciso per King Kitchen: una K geometrica con un piccolo rombo dorato, pensata per essere incisa sull’acciaio dei barbecue.",
+    "sections": [
+      {
+        "heading": "Una K regale",
+        "text": "Il monogramma nasce da una K costruita con tratti netti, in cui uno spazio a rombo richiama una gemma o una corona stilizzata. Il logotipo affianca la K a un lettering moderno, mentre il dettaglio dorato aggiunge un tocco premium senza appesantire."
+      },
+      {
+        "heading": "Pensato per il prodotto",
+        "text": "Nero e oro funzionano su carta come sul metallo: nei mockup il logo è inciso sul coperchio di un barbecue a gas in acciaio inox, dove resta leggibile e distintivo anche senza colore."
+      }
+    ],
+    "keywords": [
+      "logo design",
+      "monogramma",
+      "logo prodotto",
+      "branding barbecue",
+      "product design"
+    ],
+    "services": [
+      "Logo design",
+      "Product branding"
+    ],
+    "client": "King Kitchen",
+    "sourceHash": "bb785d89b59fc862",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:39:59.507Z"
+  }
+}

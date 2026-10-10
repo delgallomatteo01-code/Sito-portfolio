@@ -1,0 +1,59 @@
+{
+  "site": {
+    "name": "Matteo Del Gallo",
+    "role": "Graphic & Web Designer",
+    "url": "https://delgallomatteo01-code.github.io/Sito-portfolio",
+    "lang": "it",
+    "locale": "it_IT",
+    "location": "Umbria, Italia",
+    "region": "Umbria",
+    "country": "IT",
+    "tagline": "Dove le idee prendono forma.",
+    "description": "Matteo Del Gallo, graphic e web designer in Umbria: identità visive, logo design, campagne social e display, poster e siti web chiari, funzionali e coerenti.",
+    "since": 2022
+  },
+  "contact": {
+    "email": "mdelgallo.design@gmail.com",
+    "phone": "+39 347 9299162",
+    "showPhone": true,
+    "form": {
+      "provider": "web3forms",
+      "accessKey": "",
+      "endpoint": ""
+    }
+  },
+  "social": {
+    "behance": "https://www.behance.net/matteodelgallo",
+    "instagram": "https://www.instagram.com/visual_matt/",
+    "linkedin": ""
+  },
+  "categories": [
+    { "id": "branding", "label": "Branding & Product design", "short": "Branding" },
+    { "id": "logo", "label": "Logofolio", "short": "Logo" },
+    { "id": "social", "label": "Social & Display ads", "short": "Social & Ads" },
+    { "id": "illustration", "label": "Illustrations & Posters", "short": "Poster" },
+    { "id": "web", "label": "Web & UI design", "short": "Web & UI" }
+  ],
+  "behance": {
+    "enabled": true,
+    "username": "matteodelgallo",
+    "maxImagesPerProject": 12
+  },
+  "instagram": {
+    "enabled": true,
+    "username": "visual_matt",
+    "maxPosts": 30,
+    "maxImagesPerPost": 10,
+    "publishAsProjects": true,
+    "requireHashtag": "",
+    "skipHashtag": "#noportfolio",
+    "skipBehanceAnnouncements": true,
+    "feedSize": 12
+  },
+  "seo": {
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "maxImagesToAnalyze": 4,
+    "focusKeywords": ["graphic designer Umbria", "logo design", "brand identity", "grafico freelance", "web designer"]
+  }
+}

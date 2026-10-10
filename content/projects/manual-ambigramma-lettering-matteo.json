@@ -1,0 +1,59 @@
+{
+  "id": "manual-ambigramma-lettering-matteo",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2025-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Ambigramma – Lettering personale",
+    "description": "Progetto personale di lettering incentrato sulla creazione di un ambigramma del mio nome. Attraverso la ricerca di forme, simmetrie ed equilibri visivi, il segno mantiene la propria identità anche quando viene osservato da prospettive differenti."
+  },
+  "category": "illustration",
+  "featured": true,
+  "hidden": false,
+  "slug": "ambigramma-lettering-matteo",
+  "images": [
+    {
+      "src": "manual-ambigramma-lettering-matteo/00.webp",
+      "width": 1096,
+      "height": 1096,
+      "alt": "Ambigramma del nome Matteo con effetto cromato tridimensionale su fondo nero"
+    },
+    {
+      "src": "manual-ambigramma-lettering-matteo/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Ambigramma del nome Matteo in lettering appuntito con effetto cromato 3D su fondo nero e versione sticker su fondo viola"
+    }
+  ],
+  "seo": {
+    "title": "Ambigramma “Matteo” – Lettering personale",
+    "seoTitle": "Ambigramma del nome Matteo: lettering custom",
+    "metaDescription": "Ambigramma del nome Matteo: un lettering che si legge anche capovolto, con forme gotiche e appuntite in versione cromata 3D e sticker su fondo viola.",
+    "intro": "Un nome che si legge anche capovolto: questo ambigramma di “Matteo” è un esercizio di lettering su forme, simmetrie ed equilibri visivi.",
+    "sections": [
+      {
+        "heading": "La sfida della simmetria",
+        "text": "In un ambigramma ogni lettera deve funzionare due volte, nel verso giusto e ruotata. Ho lavorato su curve, punte e spessori per far sì che il segno mantenga la propria identità da prospettive diverse, senza sembrare forzato."
+      },
+      {
+        "heading": "Dal cromo allo sticker",
+        "text": "Il lettering, con un carattere tagliente vicino all’estetica metal e gotica, è presentato in una versione cromata tridimensionale su fondo nero e in una versione sticker bianca e nera su viola, pronta per merchandise e social."
+      }
+    ],
+    "keywords": [
+      "ambigramma",
+      "lettering",
+      "tipografia personalizzata",
+      "logo design",
+      "graphic design"
+    ],
+    "services": [
+      "Lettering",
+      "Tipografia"
+    ],
+    "client": null,
+    "sourceHash": "aa8d22b4a1800145",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:40:01.307Z"
+  }
+}

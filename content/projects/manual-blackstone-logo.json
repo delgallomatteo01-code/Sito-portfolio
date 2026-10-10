@@ -1,0 +1,53 @@
+{
+  "id": "manual-blackstone-logo",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2026-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Blackstone",
+    "description": "Logo BlackStone: lettera B racchiusa in una sagoma di pietra. Bianco e nero, settore attrezzature da giardino."
+  },
+  "category": "logo",
+  "featured": false,
+  "hidden": false,
+  "slug": "blackstone-logo",
+  "images": [
+    {
+      "src": "manual-blackstone-logo/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Logo BlackStone con la B dentro una pietra sfaccettata, versione in negativo su nero e foto in bianco e nero di un tosaerba"
+    }
+  ],
+  "seo": {
+    "title": "BlackStone – Logo con la B scolpita nella pietra",
+    "seoTitle": "Logo BlackStone: monogramma B a forma di pietra",
+    "metaDescription": "Logo BlackStone: una B racchiusa in una sagoma di pietra sfaccettata, in bianco e nero, con logotipo bold. Logo design solido e d’impatto.",
+    "intro": "Un marchio che pesa come una roccia: per BlackStone la lettera B è scolpita dentro una pietra sfaccettata.",
+    "sections": [
+      {
+        "heading": "Solidità a colpo d’occhio",
+        "text": "Il simbolo combina una B geometrica con la sagoma irregolare di una pietra, ricavata in negativo. Il logotipo bold, chiuso da un punto, rafforza l’idea di affidabilità e concretezza, valori chiave per un brand legato al lavoro all’aperto e alle attrezzature da giardino."
+      },
+      {
+        "heading": "Bianco e nero, senza compromessi",
+        "text": "La scelta monocromatica rende il marchio forte e versatile: funziona su fondo bianco e in negativo su nero, sui prodotti come sui materiali di comunicazione, accompagnato da una fotografia in bianco e nero dal tono materico."
+      }
+    ],
+    "keywords": [
+      "logo design",
+      "monogramma",
+      "logo bianco e nero",
+      "brand identity",
+      "logotipo"
+    ],
+    "services": [
+      "Logo design",
+      "Brand identity"
+    ],
+    "client": "BlackStone",
+    "sourceHash": "b08cad8dbfee5479",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:39:59.983Z"
+  }
+}
