@@ -1,0 +1,54 @@
+{
+  "id": "manual-einhell-promo-coupon-social",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2026-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Einhell – Promo coupon",
+    "description": "Campagna Promo Coupon Einhell -10%: storia Instagram, post social, banner homepage mobile e desktop."
+  },
+  "category": "social",
+  "featured": true,
+  "hidden": false,
+  "slug": "einhell-promo-coupon-social",
+  "images": [
+    {
+      "src": "manual-einhell-promo-coupon-social/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Campagna Einhell Promo Coupon -10% in rosso: storia Instagram, post social, banner mobile e desktop con tosaerba e tagliasiepi"
+    }
+  ],
+  "seo": {
+    "title": "Einhell – Campagna Promo Coupon multicanale",
+    "seoTitle": "Campagna social Einhell: promo coupon -10%",
+    "metaDescription": "Campagna Promo Coupon Einhell -10%: storia Instagram, post social e banner homepage mobile e desktop con diagonali rosse e call to action forti.",
+    "intro": "Una campagna promozionale ad alto impatto per Einhell: coupon del 10% declinato su storia Instagram, post social e banner per homepage mobile e desktop.",
+    "sections": [
+      {
+        "heading": "Rosso, diagonali e urgenza",
+        "text": "Il rosso del brand domina la composizione, mentre tagli diagonali separano le fotografie dei prodotti (tosaerba, tagliasiepi, pompa sommersa) e danno dinamismo. Il badge “-10%” e la call to action “Scopri l’offerta” sono subito riconoscibili."
+      },
+      {
+        "heading": "Quattro formati, un’unica campagna",
+        "text": "Dalla storia verticale al banner desktop orizzontale, gli elementi si ricompongono senza perdere gerarchia: prima l’offerta, poi i prodotti, infine il pulsante. Un sistema pensato per essere adattato rapidamente a nuove promozioni."
+      }
+    ],
+    "keywords": [
+      "campagna social",
+      "grafica promozionale",
+      "banner pubblicitari",
+      "storie Instagram",
+      "social media design"
+    ],
+    "services": [
+      "Social media design",
+      "Display advertising",
+      "Campagne promozionali"
+    ],
+    "client": "Einhell",
+    "sourceHash": "75aa981238e0ba68",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:40:00.704Z"
+  }
+}

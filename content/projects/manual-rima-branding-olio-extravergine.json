@@ -1,0 +1,72 @@
+{
+  "id": "manual-rima-branding-olio-extravergine",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2023-06-01T00:00:00.000Z",
+  "original": {
+    "title": "RI.MA. Azienda agricola",
+    "description": "Questo progetto nasce con l'obiettivo di valorizzare l'identità di un'azienda agricola locale specializzata nella produzione di olio extravergine d'oliva. Il logo è stato sviluppato a partire dalle iniziali del nome aziendale, reinterpretate in un monogramma geometrico essenziale e distintivo, capace di coniugare tradizione e contemporaneità. La palette cromatica, composta da verde oliva e verde glauco, si ispira alle tonalità naturali degli uliveti, rafforzando il legame del brand con il territorio, la qualità delle materie prime e l'autenticità della tradizione agricola. Etichetta per bottiglie d'olio di varie misure. Biglietti da visita personalizzati."
+  },
+  "category": "branding",
+  "featured": true,
+  "hidden": false,
+  "slug": "rima-branding-olio-extravergine",
+  "images": [
+    {
+      "src": "manual-rima-branding-olio-extravergine/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Bottiglie di olio extravergine RI.MA. con etichetta bianca e monogramma verde oliva, tra i rami di un uliveto"
+    },
+    {
+      "src": "manual-rima-branding-olio-extravergine/02.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Processo creativo del logo RI.MA.: dallo schizzo su carta al monogramma geometrico, con palette verde oliva e verde glauco"
+    },
+    {
+      "src": "manual-rima-branding-olio-extravergine/03.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Mockup delle etichette per bottiglie d'olio RI.MA. e dei biglietti da visita verdi con illustrazione di rami d'ulivo"
+    }
+  ],
+  "seo": {
+    "title": "RI.MA. – Brand identity per olio extravergine d’oliva",
+    "seoTitle": "Logo e packaging olio extravergine | RI.MA.",
+    "metaDescription": "Brand identity per RI.MA., azienda agricola di olio extravergine d'oliva: monogramma geometrico, palette verde oliva, etichette e biglietti da visita.",
+    "intro": "Un'identità visiva che porta l'uliveto sull'etichetta: per RI.MA., azienda agricola che produce olio extravergine d'oliva, ho progettato logo, palette ed etichette capaci di unire tradizione agricola e gusto contemporaneo.",
+    "sections": [
+      {
+        "heading": "Un monogramma nato dalle iniziali",
+        "text": "Il logo parte dalle iniziali del nome aziendale, RI e MA, ridisegnate in un monogramma geometrico essenziale. Cerchi, semicerchi e linee sottili costruiscono lettere riconoscibili ma originali, con i punti finali che danno ritmo alla composizione. Dallo schizzo su carta quadrettata alla versione vettoriale, ogni passaggio ha cercato un segno pulito, facile da ricordare e da riprodurre su qualsiasi supporto."
+      },
+      {
+        "heading": "Palette ispirata agli uliveti",
+        "text": "La palette cromatica unisce un verde oliva profondo (#68591c) e un verde glauco più chiaro (#969d72), tonalità che richiamano le foglie e i frutti dell'ulivo. È una scelta che rafforza il legame del brand con il territorio, la qualità delle materie prime e l'autenticità della tradizione agricola, senza cadere nei cliché del packaging alimentare."
+      },
+      {
+        "heading": "Etichette e coordinato stampato",
+        "text": "L'identità si estende alle etichette per bottiglie d'olio di diversi formati e ai biglietti da visita personalizzati. Fondo chiaro, monogramma in evidenza e un'illustrazione di rami d'ulivo rendono le bottiglie eleganti sullo scaffale e coerenti tra loro, mentre i biglietti riprendono gli stessi elementi in versione verde."
+      }
+    ],
+    "keywords": [
+      "logo azienda agricola",
+      "packaging olio extravergine",
+      "etichetta olio",
+      "brand identity",
+      "monogramma",
+      "graphic designer Umbria"
+    ],
+    "services": [
+      "Logo design",
+      "Brand identity",
+      "Packaging",
+      "Stampa"
+    ],
+    "client": "RI.MA. Azienda agricola",
+    "sourceHash": "a12bd67cd7d2cba4",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:39:58.891Z"
+  }
+}

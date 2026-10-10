@@ -1,0 +1,54 @@
+{
+  "id": "manual-la-cava-logo-evento",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2023-06-01T00:00:00.000Z",
+  "original": {
+    "title": "La Cava",
+    "description": "Logo per La Cava. Il lettering riprende il profilo della cava sulla montagna. Applicazione su locandina evento Shuffle Party."
+  },
+  "category": "logo",
+  "featured": true,
+  "hidden": false,
+  "slug": "la-cava-logo-evento",
+  "images": [
+    {
+      "src": "manual-la-cava-logo-evento/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Logo La Cava in blu elettrico con lettere che seguono il profilo della montagna, versioni su nero, sulla foto della cava e locandina Shuffle Party"
+    }
+  ],
+  "seo": {
+    "title": "La Cava – Logo ispirato al profilo della montagna",
+    "seoTitle": "Logo La Cava: lettering dal profilo della montagna",
+    "metaDescription": "Logo per La Cava: un lettering bold il cui bordo superiore segue il profilo della cava sulla montagna, in blu elettrico, applicato anche alla locandina di un evento.",
+    "intro": "Il nome è il luogo: per La Cava ho disegnato un logotipo in cui le lettere “scavano” il profilo della montagna da cui prende il nome.",
+    "sections": [
+      {
+        "heading": "Il paesaggio dentro le lettere",
+        "text": "Le lettere di LA CAVA sono condensate e massicce, e il loro bordo superiore segue la sagoma irregolare della parete rocciosa. Il logo diventa così una piccola mappa del territorio: chi conosce il posto riconosce la montagna, chi non la conosce percepisce comunque un segno solido e materico."
+      },
+      {
+        "heading": "Blu elettrico e applicazioni",
+        "text": "Il blu elettrico rende il marchio contemporaneo e riconoscibile, mentre le versioni in bianco su nero e sovrapposte alla fotografia della cava ne mostrano la versatilità. Il logo è stato applicato anche alla locandina dello Shuffle Party, dimostrando di reggere bene in comunicazioni per eventi."
+      }
+    ],
+    "keywords": [
+      "logo design",
+      "logotipo",
+      "lettering personalizzato",
+      "logo per eventi",
+      "identità visiva"
+    ],
+    "services": [
+      "Logo design",
+      "Lettering",
+      "Grafica eventi"
+    ],
+    "client": "La Cava",
+    "sourceHash": "0ccc3f01fc918dcb",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:39:59.325Z"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "manual-intex-banner-piscine",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2026-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Intex – Banner homepage",
+    "description": "Banner homepage desktop e mobile per piscine fuori terra e spa Intex."
+  },
+  "category": "social",
+  "featured": false,
+  "hidden": false,
+  "slug": "intex-banner-piscine",
+  "images": [
+    {
+      "src": "manual-intex-banner-piscine/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Banner homepage Intex desktop e mobile con piscina fuori terra, persone in spa e blocco centrale color petrolio con onda bianca"
+    }
+  ],
+  "seo": {
+    "title": "Intex – Banner estivi per piscine e spa",
+    "seoTitle": "Banner homepage Intex: piscine fuori terra e spa",
+    "metaDescription": "Banner homepage desktop e mobile per Intex: piscine fuori terra e spa, con onde, colore petrolio e call to action chiara. Grafica per e-commerce.",
+    "intro": "Banner per la homepage di un e-commerce che raccontano l’estate in piscina: “Goditi l’estate senza pensieri con le piscine fuori terra e le spa Intex”.",
+    "sections": [
+      {
+        "heading": "Estate in un colpo d’occhio",
+        "text": "Il blocco centrale color petrolio ospita logo, messaggio e pulsante, mentre ai lati le fotografie mostrano piscina e spa in uso. Una forma a onda chiude il banner in basso e richiama l’acqua in modo semplice."
+      },
+      {
+        "heading": "Desktop e mobile",
+        "text": "La versione desktop si sviluppa in orizzontale, quella mobile riorganizza gli stessi elementi in due colonne, mantenendo leggibilità e call to action “Scopri tutti i prodotti” ben visibile."
+      }
+    ],
+    "keywords": [
+      "banner e-commerce",
+      "banner homepage",
+      "web banner design",
+      "grafica pubblicitaria",
+      "display advertising"
+    ],
+    "services": [
+      "Web banner",
+      "Display advertising"
+    ],
+    "client": "Intex",
+    "sourceHash": "ec6805e07a23c0ba",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:40:00.501Z"
+  }
+}

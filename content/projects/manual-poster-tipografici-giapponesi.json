@@ -1,0 +1,59 @@
+{
+  "id": "manual-poster-tipografici-giapponesi",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2025-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Poster tipografici ispirati al Giappone",
+    "description": "Serie di poster tipografici minimalisti ispirati all'estetica giapponese, sviluppati attraverso l'utilizzo di linee modulari e forme geometriche ripetute. Il progetto esplora equilibrio, ritmo e sintesi visiva, reinterpretando i principi del design orientale in una chiave contemporanea attraverso il contrasto cromatico e una composizione essenziale."
+  },
+  "category": "illustration",
+  "featured": true,
+  "hidden": false,
+  "slug": "poster-tipografici-giapponesi",
+  "images": [
+    {
+      "src": "manual-poster-tipografici-giapponesi/00.webp",
+      "width": 863,
+      "height": 1076,
+      "alt": "Poster tipografico minimalista con linee nere modulari su fondo bianco e sole rosso"
+    },
+    {
+      "src": "manual-poster-tipografici-giapponesi/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Poster tipografici minimalisti ispirati al Giappone: linee nere modulari su bianco con sole rosso, e varianti su fondo nero e rosso"
+    }
+  ],
+  "seo": {
+    "title": "Poster tipografici minimalisti ispirati al Giappone",
+    "seoTitle": "Poster tipografici minimal in stile giapponese",
+    "metaDescription": "Serie di poster tipografici minimalisti ispirati all’estetica giapponese: linee modulari, forme geometriche ripetute e contrasto tra nero, bianco e rosso.",
+    "intro": "Una serie di poster tipografici che reinterpreta l’estetica giapponese con linee modulari, ritmo e un sole rosso al centro della scena.",
+    "sections": [
+      {
+        "heading": "Linee che diventano lettere",
+        "text": "Ogni poster è costruito con linee parallele che si piegano in curve e spirali, fino a disegnare le lettere. È un lavoro su equilibrio, ritmo e sintesi: pochi elementi ripetuti con rigore, in cui il vuoto conta quanto il pieno."
+      },
+      {
+        "heading": "Tre varianti di colore",
+        "text": "Nero, bianco e rosso si alternano come fondo e come segno, con un semicerchio rosso che richiama il sole nascente. Il contrasto cromatico rende la serie di forte impatto, sia stampata in grande formato sia vista su schermo."
+      }
+    ],
+    "keywords": [
+      "poster tipografici",
+      "poster minimalisti",
+      "stile giapponese",
+      "tipografia geometrica",
+      "graphic design"
+    ],
+    "services": [
+      "Poster design",
+      "Tipografia"
+    ],
+    "client": null,
+    "sourceHash": "c989f38a7cef168a",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:40:01.673Z"
+  }
+}

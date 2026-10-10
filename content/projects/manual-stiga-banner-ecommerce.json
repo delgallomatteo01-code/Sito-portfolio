@@ -1,0 +1,53 @@
+{
+  "id": "manual-stiga-banner-ecommerce",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2026-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Stiga – Banner e-commerce",
+    "description": "Esplora tutta la gamma STIGA su AGRIEURO. Banner homepage desktop, mobile e Demand Gen landscape."
+  },
+  "category": "social",
+  "featured": false,
+  "hidden": false,
+  "slug": "stiga-banner-ecommerce",
+  "images": [
+    {
+      "src": "manual-stiga-banner-ecommerce/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Banner STIGA desktop, mobile e Demand Gen con griglia di foto di attrezzi da giardino, bordi gialli e pannello blu notte"
+    }
+  ],
+  "seo": {
+    "title": "STIGA – Banner per la gamma giardino",
+    "seoTitle": "Banner STIGA: grafica display per e-commerce",
+    "metaDescription": "Banner STIGA per e-commerce: homepage desktop e mobile e formato Demand Gen, con griglia fotografica, blu notte e giallo per la gamma da giardino.",
+    "intro": "Una serie di banner per presentare tutta la gamma STIGA: “Soluzioni affidabili e pratiche per ogni esigenza del giardino”.",
+    "sections": [
+      {
+        "heading": "Una griglia che mostra la gamma",
+        "text": "Le fotografie di trattorino, tosaerba, robot e decespugliatore sono incorniciate da sottili bordi gialli, a formare una griglia che racconta in un solo sguardo la varietà dei prodotti. Il pannello blu notte ospita logo, messaggio e pulsante."
+      },
+      {
+        "heading": "Coerenza su ogni formato",
+        "text": "Banner homepage desktop, versione mobile e Demand Gen landscape seguono la stessa struttura e gli stessi colori del brand, giallo e blu notte, per una comunicazione coerente su sito e campagne Google."
+      }
+    ],
+    "keywords": [
+      "banner e-commerce",
+      "display advertising",
+      "Demand Gen",
+      "web banner design",
+      "grafica pubblicitaria"
+    ],
+    "services": [
+      "Web banner",
+      "Display advertising"
+    ],
+    "client": "STIGA",
+    "sourceHash": "eb5205aca0319426",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:40:00.895Z"
+  }
+}

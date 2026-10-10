@@ -1,0 +1,53 @@
+{
+  "id": "manual-si-chef-logo-elettrodomestici",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2024-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Sì Chef",
+    "description": "Logo Sì Chef con cappello da chef, applicato su planetaria da cucina."
+  },
+  "category": "logo",
+  "featured": false,
+  "hidden": false,
+  "slug": "si-chef-logo-elettrodomestici",
+  "images": [
+    {
+      "src": "manual-si-chef-logo-elettrodomestici/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Logo Sì Chef con cappello da cuoco e scritta corsiva, “Sì” in rosso, versioni bianco e nero e logo cromato su planetaria bianca"
+    }
+  ],
+  "seo": {
+    "title": "Sì Chef – Logo per piccoli elettrodomestici",
+    "seoTitle": "Logo Sì Chef: branding per elettrodomestici cucina",
+    "metaDescription": "Logo Sì Chef: cappello da chef e lettering corsivo con accento rosso, applicato in rilievo su una planetaria. Logo design per prodotti da cucina.",
+    "intro": "Un logo simpatico e immediato per Sì Chef: un cappello da cuoco che sorride sopra un lettering corsivo, pensato per i piccoli elettrodomestici da cucina.",
+    "sections": [
+      {
+        "heading": "Un cappello che sorride",
+        "text": "Il cappello da chef è disegnato con un tratto morbido e qualche segno interno che ricorda un sorriso. Sotto, la scritta “Chef” in corsivo dà movimento, mentre “Sì” in rosso aggiunge energia e un tono positivo, quasi una risposta entusiasta."
+      },
+      {
+        "heading": "Dal foglio alla planetaria",
+        "text": "Il logo è stato pensato per essere riprodotto in rilievo cromato sulla scocca degli elettrodomestici: nei mockup compare su una planetaria bianca, oltre alle versioni in positivo e negativo per stampa e digitale."
+      }
+    ],
+    "keywords": [
+      "logo design",
+      "logo elettrodomestici",
+      "product branding",
+      "logo cucina",
+      "graphic design"
+    ],
+    "services": [
+      "Logo design",
+      "Product branding"
+    ],
+    "client": "Sì Chef",
+    "sourceHash": "ecff34da23e45737",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:39:59.664Z"
+  }
+}

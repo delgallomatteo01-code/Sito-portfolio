@@ -1,0 +1,63 @@
+{
+  "id": "manual-logo-personale-matteo-del-gallo",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2022-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Matteo Del Gallo – Logo personale",
+    "description": "Il mio logo personale nasce dall'unione delle iniziali del mio nome e cognome, trasformate in un segno grafico distintivo che richiama la forma stilizzata di una testa di gallo. Un marchio essenziale che sintetizza la mia identità professionale in modo originale e immediatamente riconoscibile."
+  },
+  "category": "logo",
+  "featured": false,
+  "hidden": false,
+  "slug": "logo-personale-matteo-del-gallo",
+  "images": [
+    {
+      "src": "manual-logo-personale-matteo-del-gallo/00.webp",
+      "width": 768,
+      "height": 592,
+      "alt": "Monogramma MG di Matteo Del Gallo in rosso, arancione e grigio chiaro"
+    },
+    {
+      "src": "manual-logo-personale-matteo-del-gallo/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Logo personale di Matteo Del Gallo: monogramma MG rosso, arancione e grigio che richiama la testa di un gallo, con versioni in grigio, nero e negativo"
+    }
+  ],
+  "seo": {
+    "title": "Logo personale MG – il gallo nelle iniziali",
+    "seoTitle": "Logo personale con monogramma MG | Matteo Del Gallo",
+    "metaDescription": "Il logo personale di Matteo Del Gallo: le iniziali M e G intrecciate in un monogramma che richiama la testa di un gallo. Colori rosso, arancione e grigio.",
+    "intro": "Il mio marchio personale unisce le iniziali M e G in un unico segno. Guardandolo bene compare una testa di gallo stilizzata: un gioco visivo sul mio cognome che rende il logo facile da ricordare.",
+    "sections": [
+      {
+        "heading": "Due iniziali, una sola forma",
+        "text": "La M è costruita con due archi morbidi e inclinati, la G con un'ellisse che la attraversa e si chiude con un taglio netto. Le due lettere si sovrappongono e si incastrano, creando profondità senza bisogno di ombre o effetti. Il risultato è un monogramma dinamico, che sembra in movimento anche da fermo."
+      },
+      {
+        "heading": "Il gallo nascosto",
+        "text": "La M diventa la cresta e la G la testa: il marchio richiama un gallo stilizzato, omaggio diretto al cognome Del Gallo. È il tipo di dettaglio che non si vede subito ma, una volta notato, rende il segno impossibile da dimenticare."
+      },
+      {
+        "heading": "Colori e declinazioni",
+        "text": "La palette usa rosso (#ca4144), arancione (#ea684a) e grigio chiaro (#dddddc), gli stessi colori che ritrovi in tutto questo sito. Il marchio è progettato anche in scala di grigi, in nero su bianco e in negativo su fondo scuro, per funzionare su ogni supporto digitale e stampato."
+      }
+    ],
+    "keywords": [
+      "logo personale",
+      "monogramma",
+      "personal branding",
+      "logo design",
+      "graphic designer Umbria"
+    ],
+    "services": [
+      "Logo design",
+      "Personal branding"
+    ],
+    "client": null,
+    "sourceHash": "95798f2e8399dc48",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:39:59.029Z"
+  }
+}

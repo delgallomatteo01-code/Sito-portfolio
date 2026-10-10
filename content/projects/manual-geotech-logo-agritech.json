@@ -1,0 +1,53 @@
+{
+  "id": "manual-geotech-logo-agritech",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2026-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Geotech",
+    "description": "Logo GeoTech: G con foglia, sfumatura dal blu al verde. Tecnologia e agricoltura."
+  },
+  "category": "logo",
+  "featured": false,
+  "hidden": false,
+  "slug": "geotech-logo-agritech",
+  "images": [
+    {
+      "src": "manual-geotech-logo-agritech/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Logo GeoTech con G blu e foglia verde, immagine di una pianta digitale e foto di terreno coltivato e mani che reggono la terra"
+    }
+  ],
+  "seo": {
+    "title": "GeoTech – Logo tra tecnologia e natura",
+    "seoTitle": "Logo GeoTech: brand identity agritech",
+    "metaDescription": "Logo GeoTech: una G con una foglia al centro e sfumatura dal blu al verde per unire tecnologia e agricoltura. Logo design per il settore agritech.",
+    "intro": "GeoTech unisce tecnologia e terra: il logo racchiude una foglia dentro una G che sfuma dal blu della tecnologia al verde della natura.",
+    "sections": [
+      {
+        "heading": "Una G che cresce",
+        "text": "Il simbolo è una G morbida e circolare, al cui interno nasce una foglia che ne completa la forma. È un’immagine semplice e immediata di crescita, adatta a un brand che lavora con suolo, coltivazioni e innovazione."
+      },
+      {
+        "heading": "Gradiente con un significato",
+        "text": "La sfumatura passa dal blu profondo all’azzurro e poi al verde: un ponte cromatico tra mondo digitale e mondo naturale. Il logotipo in grigio scuro lascia tutto il protagonismo al simbolo, mantenendo l’insieme pulito e professionale."
+      }
+    ],
+    "keywords": [
+      "logo agritech",
+      "logo design",
+      "logo agricoltura",
+      "brand identity",
+      "logo con gradiente"
+    ],
+    "services": [
+      "Logo design",
+      "Brand identity"
+    ],
+    "client": "GeoTech",
+    "sourceHash": "52dd8c387a44096c",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:40:00.156Z"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "manual-cover-musicali-music-is-the-cure",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2024-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Music is the cure – Cover musicali",
+    "description": "Progetto di due concept grafici per cover musicali. Il lavoro esplora l'integrazione tra tipografia, composizione e texture per costruire un'identità capace di tradurre atmosfere e suggestioni sonore attraverso la comunicazione visiva."
+  },
+  "category": "illustration",
+  "featured": true,
+  "hidden": false,
+  "slug": "cover-musicali-music-is-the-cure",
+  "images": [
+    {
+      "src": "manual-cover-musicali-music-is-the-cure/00.webp",
+      "width": 1093,
+      "height": 1093,
+      "alt": "Copertina Music is the cure: titolo ripetuto e deformato su fondo arancione con vinile avvolto nella plastica"
+    },
+    {
+      "src": "manual-cover-musicali-music-is-the-cure/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Cover musicale Music is the cure con scritta ripetuta su fondo arancione e vinile in plastica, e cover viola Beware of darkness"
+    }
+  ],
+  "seo": {
+    "title": "Music is the cure – Concept per cover musicali",
+    "seoTitle": "Cover musicali: concept grafici e tipografia",
+    "metaDescription": "Due concept grafici per cover musicali, “Music is the cure” e “Beware of darkness”: tipografia, texture e composizione per tradurre in immagini il suono.",
+    "intro": "Due copertine per raccontare la musica senza ascoltarla: tipografia, composizione e texture si uniscono per tradurre atmosfere sonore in immagini.",
+    "sections": [
+      {
+        "heading": "Music is the cure",
+        "text": "Il titolo si ripete e si deforma su un fondo arancione come un’eco o un ritornello, mentre un vinile avvolto nella plastica entra nella composizione dal basso. Texture di carta, etichetta del prezzo e plastica stropicciata danno all’insieme un sapore analogico e tattile."
+      },
+      {
+        "heading": "Beware of darkness",
+        "text": "Il secondo concept cambia completamente registro: viola acido, una fotografia di paesaggio distorta e una serif elegante creano un’atmosfera psichedelica e notturna. Due mondi diversi, accomunati dalla stessa ricerca sul rapporto tra testo e immagine."
+      }
+    ],
+    "keywords": [
+      "cover musicali",
+      "copertina album",
+      "graphic design tipografico",
+      "poster design",
+      "art direction"
+    ],
+    "services": [
+      "Cover design",
+      "Tipografia",
+      "Art direction"
+    ],
+    "client": null,
+    "sourceHash": "27eb481e679369f6",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:40:01.152Z"
+  }
+}

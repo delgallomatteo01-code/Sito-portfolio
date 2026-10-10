@@ -1,0 +1,53 @@
+{
+  "id": "manual-worx-social-display-ads",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2026-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Worx – Social & Display ads",
+    "description": "Post social, Demand Gen landscape e banner homepage desktop per il robot tagliaerba WORX Landroid Vision Cloud."
+  },
+  "category": "social",
+  "featured": false,
+  "hidden": false,
+  "slug": "worx-social-display-ads",
+  "images": [
+    {
+      "src": "manual-worx-social-display-ads/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Creatività WORX Landroid Vision Cloud: post social, banner Demand Gen e banner homepage desktop con robot tagliaerba arancione su fondo marrone"
+    }
+  ],
+  "seo": {
+    "title": "WORX Landroid – Campagna social e display",
+    "seoTitle": "Banner e post social WORX Landroid Vision Cloud",
+    "metaDescription": "Campagna social e display per i robot tagliaerba WORX Landroid Vision Cloud: post social, formato Demand Gen e banner per homepage desktop.",
+    "intro": "Una serie di creatività digitali per presentare i robot tagliaerba WORX Landroid Vision Cloud su social, Google Demand Gen e homepage e-commerce.",
+    "sections": [
+      {
+        "heading": "Il prodotto al centro",
+        "text": "Fondo caldo e scuro, luce morbida e il robot arancione in primo piano: ogni formato mette il prodotto al centro e lascia spazio a un messaggio breve e chiaro, come “Scopri in anteprima la nuova gamma WORX” o la promozione con omaggi a tempo."
+      },
+      {
+        "heading": "Un sistema per più formati",
+        "text": "Post social quadrato, Demand Gen orizzontale e banner per homepage desktop condividono logo, gerarchia del testo e call to action, così la campagna resta riconoscibile su ogni canale."
+      }
+    ],
+    "keywords": [
+      "banner pubblicitari",
+      "social media design",
+      "display advertising",
+      "Demand Gen",
+      "grafica per e-commerce"
+    ],
+    "services": [
+      "Social media design",
+      "Display advertising"
+    ],
+    "client": "WORX",
+    "sourceHash": "fbd06834af831d0a",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:40:00.342Z"
+  }
+}

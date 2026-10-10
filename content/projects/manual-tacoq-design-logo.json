@@ -1,0 +1,53 @@
+{
+  "id": "manual-tacoq-design-logo",
+  "source": "manual",
+  "sourceUrl": null,
+  "publishedAt": "2023-06-01T00:00:00.000Z",
+  "original": {
+    "title": "Tacoq Design",
+    "description": "Logo e lettering per Tacoq Designs. Pittogramma quadrato, versioni positivo e negativo, applicazione su biglietto da visita."
+  },
+  "category": "logo",
+  "featured": false,
+  "hidden": false,
+  "slug": "tacoq-design-logo",
+  "images": [
+    {
+      "src": "manual-tacoq-design-logo/01.webp",
+      "width": 1703,
+      "height": 1125,
+      "alt": "Logo Tacoq Designs: pittogramma quadrato e lettering spigoloso in marrone e crema, versioni positivo e negativo e biglietto da visita su un tavolo in legno"
+    }
+  ],
+  "seo": {
+    "title": "Tacoq Design – Logo e lettering geometrico",
+    "seoTitle": "Logo design geometrico per Tacoq Designs",
+    "metaDescription": "Logo per Tacoq Designs: pittogramma quadrato e lettering spigoloso dall’ispirazione orientale, in marrone scuro e crema, con applicazione su biglietto da visita.",
+    "intro": "Per Tacoq Designs ho disegnato un marchio compatto: un pittogramma quadrato e un lettering dalle linee spezzate, pensati per lavorare insieme o separatamente.",
+    "sections": [
+      {
+        "heading": "Un pittogramma che sembra un sigillo",
+        "text": "Il simbolo racchiude in un quadrato pieno una forma costruita con tratti netti e un taglio diagonale. Ricorda un timbro o un sigillo orientale ed è leggibile anche a dimensioni ridotte, come favicon o immagine profilo."
+      },
+      {
+        "heading": "Lettering su misura",
+        "text": "Il logotipo TACOQ DESIGNS è disegnato a mano con aste spezzate e terminazioni angolari, coerenti con il pittogramma. La palette marrone scuro e crema dà al marchio un tono caldo e artigianale, applicato qui su un biglietto da visita in un contesto reale."
+      }
+    ],
+    "keywords": [
+      "logo design",
+      "pittogramma",
+      "lettering",
+      "logotipo",
+      "identità visiva"
+    ],
+    "services": [
+      "Logo design",
+      "Lettering"
+    ],
+    "client": "Tacoq Designs",
+    "sourceHash": "842a6672ca02c9b5",
+    "model": "scritto a mano",
+    "generatedAt": "2026-10-10T09:39:59.173Z"
+  }
+}
