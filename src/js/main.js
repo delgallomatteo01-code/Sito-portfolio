@@ -194,6 +194,7 @@ function mobileMenu() {
   if (!btn || !menu) return;
   const set = (open) => {
     btn.setAttribute('aria-expanded', open);
+    $('[data-nav]').classList.toggle('is-menu-open', open);
     btn.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
     if (open) { menu.hidden = false; requestAnimationFrame(() => menu.classList.add('is-open')); }
     else { menu.classList.remove('is-open'); setTimeout(() => { if (!menu.classList.contains('is-open')) menu.hidden = true; }, 700); }
