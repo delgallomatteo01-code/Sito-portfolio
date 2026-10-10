@@ -218,6 +218,7 @@ p { margin: 0 0 1em; }
 .marquee__track { display: flex; width: max-content; animation: marquee 32s linear infinite; transform: skewX(var(--skew, 0deg)); }
 .marquee span { display: flex; align-items: center; font: 800 clamp(26px, 4vw, 56px)/1 var(--display); white-space: nowrap; }
 .marquee i { font-style: normal; color: var(--orange); margin: 0 .55em; font-size: .7em; display: inline-block; animation: spin 6s linear infinite; }
+.marquee:hover .marquee__track { animation-play-state: paused; }
 @keyframes marquee { to { transform: translateX(-50%) skewX(var(--skew, 0deg)); } }
 @keyframes spin { to { rotate: 360deg; } }
 
@@ -520,4 +521,6 @@ p { margin: 0 0 1em; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .js [data-reveal], .js [data-split-words] .w > span { opacity: 1; transform: none; }
   @view-transition { navigation: none; }
+  /* La fascia continua a scorrere, più lenta: è un movimento leggero e si ferma al passaggio del mouse. */
+  .marquee__track { animation-duration: 70s !important; animation-iteration-count: infinite !important; }
 }
