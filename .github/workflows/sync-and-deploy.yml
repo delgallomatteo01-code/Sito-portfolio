@@ -83,6 +83,13 @@ jobs:
           SITE_URL: ${{ vars.SITE_URL }}
         run: npm run build
 
+      # Prova ad attivare GitHub Pages (sorgente: GitHub Actions) se non è ancora attivo.
+      # Se il token non ha i permessi necessari, va attivato a mano da Settings → Pages.
+      - uses: actions/configure-pages@v5
+        continue-on-error: true
+        with:
+          enablement: true
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
