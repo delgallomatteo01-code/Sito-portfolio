@@ -153,7 +153,7 @@ p { margin: 0 0 1em; }
 }
 .menu.is-open { clip-path: circle(150% at calc(100% - var(--gutter) - 24px) calc(var(--nav-h) / 2)); }
 .menu nav { display: flex; flex-direction: column; }
-.menu nav a { font: 800 clamp(44px, 13vw, 96px)/1.05 var(--display); text-decoration: none; display: flex; align-items: baseline; gap: 14px; }
+.menu nav a { font: 800 clamp(36px, 11vw, 96px)/1.05 var(--display); text-decoration: none; display: flex; align-items: baseline; gap: 14px; }
 .menu nav a span { font-size: 16px; opacity: .8; }
 .menu__foot { display: flex; gap: 12px; margin-top: 40px; flex-wrap: wrap; }
 .menu .social { color: var(--white); }
@@ -176,7 +176,7 @@ p { margin: 0 0 1em; }
 .no-intro .loader, html:not(.js) .loader { display: none; }
 
 /* ---------- Hero ---------- */
-.hero { position: relative; min-height: 100svh; padding: calc(var(--nav-h) + 4vh) var(--gutter) 6vh; display: flex; align-items: center; overflow: hidden; }
+.hero { position: relative; min-height: calc(100svh - clamp(90px, 13vh, 150px)); padding: calc(var(--nav-h) + 4vh) var(--gutter) 6vh; display: flex; align-items: center; overflow: hidden; }
 .hero__grid { width: 100%; max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 1fr auto; grid-template-areas: 'kicker kicker' 'title title' 'lead badge' 'ctas badge'; column-gap: 4vw; align-items: end; position: relative; }
 .hero__kicker { grid-area: kicker; display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 14px; background: var(--white); padding: 8px 14px; border-radius: 999px; justify-self: start; box-shadow: 0 6px 24px rgb(39 39 39 / .06); margin-bottom: 3vh; }
 .hero__title { grid-area: title; position: relative; z-index: 1; font-size: clamp(56px, 11.2vw, 188px); line-height: .86; letter-spacing: -.045em; font-weight: 800; }
@@ -208,6 +208,12 @@ p { margin: 0 0 1em; }
 
 /* ---------- Marquee ---------- */
 .marquee-wrap { overflow: hidden; padding: 3vw 0; margin: -3vw 0 0; }
+/* Menu mobile aperto: logo e nome diventano bianchi sul fondo arancione */
+.nav.is-menu-open { background: transparent !important; box-shadow: none !important; transform: none !important; }
+.nav.is-menu-open .nav__logo path { fill: var(--white); transition: fill .4s var(--ease); }
+.nav.is-menu-open .nav__name { color: var(--white); border-color: rgb(255 255 255 / .4); }
+.nav.is-menu-open .nav__name small { color: rgb(255 255 255 / .8); }
+.nav__logo path { transition: fill .4s var(--ease), transform .9s var(--ease); }
 .marquee { background: var(--red); color: var(--white); overflow: hidden; padding: 18px 0; transform: rotate(-2deg) scale(1.04); margin: 2vh 0 4vh; }
 .marquee__track { display: flex; width: max-content; animation: marquee 32s linear infinite; transform: skewX(var(--skew, 0deg)); }
 .marquee span { display: flex; align-items: center; font: 800 clamp(26px, 4vw, 56px)/1 var(--display); white-space: nowrap; }
