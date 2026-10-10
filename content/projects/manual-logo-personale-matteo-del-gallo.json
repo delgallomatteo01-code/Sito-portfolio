@@ -16,37 +16,37 @@
       "src": "manual-logo-personale-matteo-del-gallo/00.webp",
       "width": 768,
       "height": 592,
-      "alt": "Monogramma MG di Matteo Del Gallo in rosso, arancione e grigio chiaro"
+      "alt": "Monogramma MDG di Matteo Del Gallo: M rossa, D arancione e G grigia intrecciate a formare la testa di un gallo"
     },
     {
       "src": "manual-logo-personale-matteo-del-gallo/01.webp",
       "width": 1703,
       "height": 1125,
-      "alt": "Logo personale di Matteo Del Gallo: monogramma MG rosso, arancione e grigio che richiama la testa di un gallo, con versioni in grigio, nero e negativo"
+      "alt": "Logo personale di Matteo Del Gallo con le iniziali M, D e G in rosso, arancione e grigio, con versioni in grigio, nero e negativo"
     }
   ],
   "seo": {
-    "title": "Logo personale MG – il gallo nelle iniziali",
-    "seoTitle": "Logo personale con monogramma MG | Matteo Del Gallo",
-    "metaDescription": "Il logo personale di Matteo Del Gallo: le iniziali M e G intrecciate in un monogramma che richiama la testa di un gallo. Colori rosso, arancione e grigio.",
-    "intro": "Il mio marchio personale unisce le iniziali M e G in un unico segno. Guardandolo bene compare una testa di gallo stilizzata: un gioco visivo sul mio cognome che rende il logo facile da ricordare.",
+    "title": "Logo personale MDG – tre iniziali, un gallo",
+    "seoTitle": "Logo personale con monogramma MDG | Matteo Del Gallo",
+    "metaDescription": "Il logo personale di Matteo Del Gallo: le iniziali M, D e G intrecciate in un monogramma che richiama la testa di un gallo. Rosso, arancione e grigio.",
+    "intro": "Il mio marchio personale unisce le tre iniziali di Matteo Del Gallo, M, D e G, in un unico segno. Guardandolo bene compare una testa di gallo stilizzata: un gioco visivo sul mio cognome che rende il logo facile da ricordare.",
     "sections": [
       {
-        "heading": "Due iniziali, una sola forma",
-        "text": "La M è costruita con due archi morbidi e inclinati, la G con un'ellisse che la attraversa e si chiude con un taglio netto. Le due lettere si sovrappongono e si incastrano, creando profondità senza bisogno di ombre o effetti. Il risultato è un monogramma dinamico, che sembra in movimento anche da fermo."
+        "heading": "Tre iniziali, una sola forma",
+        "text": "La M rossa è costruita con due archi morbidi e inclinati. La D arancione nasce da un’asta dritta e da una grande curva che abbraccia il segno. La G grigia è un’ellisse che si chiude con un taglio netto verso l’interno. Le tre lettere si sovrappongono e si incastrano, creando profondità senza ombre né effetti: un monogramma dinamico, che sembra in movimento anche da fermo."
       },
       {
         "heading": "Il gallo nascosto",
-        "text": "La M diventa la cresta e la G la testa: il marchio richiama un gallo stilizzato, omaggio diretto al cognome Del Gallo. È il tipo di dettaglio che non si vede subito ma, una volta notato, rende il segno impossibile da dimenticare."
+        "text": "Insieme, le tre lettere disegnano un gallo stilizzato: la M diventa la cresta, la D e la G formano la testa e il becco. È un omaggio diretto al cognome Del Gallo, il tipo di dettaglio che non si nota subito ma che, una volta visto, rende il segno impossibile da dimenticare."
       },
       {
         "heading": "Colori e declinazioni",
-        "text": "La palette usa rosso (#ca4144), arancione (#ea684a) e grigio chiaro (#dddddc), gli stessi colori che ritrovi in tutto questo sito. Il marchio è progettato anche in scala di grigi, in nero su bianco e in negativo su fondo scuro, per funzionare su ogni supporto digitale e stampato."
+        "text": "Ogni lettera ha il suo colore: rosso (#ca4144) per la M, arancione (#ea684a) per la D e grigio chiaro (#dddddc) per la G, gli stessi colori che ritrovi in tutto questo sito. Il marchio è progettato anche in scala di grigi, in nero su bianco e in negativo su fondo scuro, per funzionare su ogni supporto digitale e stampato."
       }
     ],
     "keywords": [
       "logo personale",
-      "monogramma",
+      "monogramma MDG",
       "personal branding",
       "logo design",
       "graphic designer Umbria"
@@ -59,5 +59,6 @@
     "sourceHash": "95798f2e8399dc48",
     "model": "scritto a mano",
     "generatedAt": "2026-10-10T09:39:59.029Z"
-  }
+  },
+  "seoLocked": true
 }
