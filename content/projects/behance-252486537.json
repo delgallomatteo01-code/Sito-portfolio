@@ -1,0 +1,37 @@
+{
+  "id": "behance-252486537",
+  "source": "behance",
+  "sourceUrl": "https://www.behance.net/gallery/252486537/Portfolio-MDG-2026",
+  "publishedAt": "2026-07-10T06:52:04.000Z",
+  "original": {
+    "title": "Portfolio MDG 2026",
+    "description": "Portfolio di Graphic Design - Matteo Del Gallo 2022 - 2026",
+    "tags": [],
+    "fromPage": false
+  },
+  "category": "branding",
+  "featured": false,
+  "hidden": false,
+  "images": [
+    {
+      "src": "behance-252486537/01.webp",
+      "width": 808,
+      "height": 632,
+      "alt": "Portfolio MDG 2026 – immagine 1"
+    }
+  ],
+  "slug": "portfolio-mdg-2026",
+  "seo": {
+    "title": "Portfolio MDG 2026",
+    "seoTitle": "Portfolio MDG 2026 | Matteo Del Gallo",
+    "metaDescription": "Portfolio di Graphic Design - Matteo Del Gallo 2022 - 2026",
+    "intro": "Portfolio di Graphic Design - Matteo Del Gallo 2022 - 2026",
+    "sections": [],
+    "keywords": [],
+    "services": [],
+    "client": null,
+    "sourceHash": "5e9dad361945abe2",
+    "model": "fallback",
+    "generatedAt": "2026-10-10T10:09:05.198Z"
+  }
+}

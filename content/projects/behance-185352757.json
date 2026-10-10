@@ -1,0 +1,37 @@
+{
+  "id": "behance-185352757",
+  "source": "behance",
+  "sourceUrl": "https://www.behance.net/gallery/185352757/Personal-logo-design",
+  "publishedAt": "2023-11-25T19:09:01.000Z",
+  "original": {
+    "title": "Personal logo design",
+    "description": "",
+    "tags": [],
+    "fromPage": false
+  },
+  "category": "logo",
+  "featured": false,
+  "hidden": false,
+  "images": [
+    {
+      "src": "behance-185352757/01.webp",
+      "width": 808,
+      "height": 632,
+      "alt": "Personal logo design – immagine 1"
+    }
+  ],
+  "slug": "personal-logo-design",
+  "seo": {
+    "title": "Personal logo design",
+    "seoTitle": "Personal logo design | Matteo Del Gallo",
+    "metaDescription": "Personal logo design: progetto di logofolio di Matteo Del Gallo, graphic & web designer in Umbria.",
+    "intro": "Personal logo design",
+    "sections": [],
+    "keywords": [],
+    "services": [],
+    "client": null,
+    "sourceHash": "a230405e090334f0",
+    "model": "fallback",
+    "generatedAt": "2026-10-10T10:09:05.196Z"
+  }
+}

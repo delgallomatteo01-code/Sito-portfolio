@@ -1,0 +1,37 @@
+{
+  "id": "behance-169492189",
+  "source": "behance",
+  "sourceUrl": "https://www.behance.net/gallery/169492189/Thacoq-Designs-old-logo",
+  "publishedAt": "2023-04-29T19:43:01.000Z",
+  "original": {
+    "title": "Thacoq Designs old logo",
+    "description": "",
+    "tags": [],
+    "fromPage": false
+  },
+  "category": "logo",
+  "featured": false,
+  "hidden": false,
+  "images": [
+    {
+      "src": "behance-169492189/01.webp",
+      "width": 808,
+      "height": 632,
+      "alt": "Thacoq Designs old logo – immagine 1"
+    }
+  ],
+  "slug": "thacoq-designs-old-logo",
+  "seo": {
+    "title": "Thacoq Designs old logo",
+    "seoTitle": "Thacoq Designs old logo | Matteo Del Gallo",
+    "metaDescription": "Thacoq Designs old logo: progetto di logofolio di Matteo Del Gallo, graphic & web designer in Umbria.",
+    "intro": "Thacoq Designs old logo",
+    "sections": [],
+    "keywords": [],
+    "services": [],
+    "client": null,
+    "sourceHash": "0d838b53289c14c2",
+    "model": "fallback",
+    "generatedAt": "2026-10-10T10:09:05.196Z"
+  }
+}

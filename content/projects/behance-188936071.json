@@ -1,0 +1,37 @@
+{
+  "id": "behance-188936071",
+  "source": "behance",
+  "sourceUrl": "https://www.behance.net/gallery/188936071/Swappo-Store-concept",
+  "publishedAt": "2024-02-04T17:18:25.000Z",
+  "original": {
+    "title": "Swappo Store - concept",
+    "description": "",
+    "tags": [],
+    "fromPage": false
+  },
+  "category": "branding",
+  "featured": false,
+  "hidden": false,
+  "images": [
+    {
+      "src": "behance-188936071/01.webp",
+      "width": 808,
+      "height": 632,
+      "alt": "Swappo Store - concept – immagine 1"
+    }
+  ],
+  "slug": "swappo-store-concept",
+  "seo": {
+    "title": "Swappo Store - concept",
+    "seoTitle": "Swappo Store - concept | Matteo Del Gallo",
+    "metaDescription": "Swappo Store - concept: progetto di branding & product design di Matteo Del Gallo, graphic & web designer in Umbria.",
+    "intro": "Swappo Store - concept",
+    "sections": [],
+    "keywords": [],
+    "services": [],
+    "client": null,
+    "sourceHash": "33350241af12539d",
+    "model": "fallback",
+    "generatedAt": "2026-10-10T10:09:05.198Z"
+  }
+}

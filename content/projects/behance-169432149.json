@@ -1,0 +1,37 @@
+{
+  "id": "behance-169432149",
+  "source": "behance",
+  "sourceUrl": "https://www.behance.net/gallery/169432149/Product-design-x-RIMA",
+  "publishedAt": "2023-04-28T20:17:01.000Z",
+  "original": {
+    "title": "Product design x RI.MA.",
+    "description": "",
+    "tags": [],
+    "fromPage": false
+  },
+  "category": "branding",
+  "featured": false,
+  "hidden": false,
+  "images": [
+    {
+      "src": "behance-169432149/01.webp",
+      "width": 808,
+      "height": 632,
+      "alt": "Product design x RI.MA. – immagine 1"
+    }
+  ],
+  "slug": "product-design-x-ri-ma",
+  "seo": {
+    "title": "Product design x RI.MA.",
+    "seoTitle": "Product design x RI.MA. | Matteo Del Gallo",
+    "metaDescription": "Product design x RI.MA.: progetto di branding & product design di Matteo Del Gallo, graphic & web designer in Umbria.",
+    "intro": "Product design x RI.MA.",
+    "sections": [],
+    "keywords": [],
+    "services": [],
+    "client": null,
+    "sourceHash": "e1c1771c6706b342",
+    "model": "fallback",
+    "generatedAt": "2026-10-10T10:09:05.194Z"
+  }
+}
