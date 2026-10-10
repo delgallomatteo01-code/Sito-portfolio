@@ -1,4 +1,5 @@
-/* Matteo Del Gallo — interazioni del portfolio. Nessuna dipendenza. */
+/* Matteo Del Gallo — interazioni del portfolio. Unica dipendenza: Lenis (scroll fluido). */
+import Lenis from './vendor/lenis.js';
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -55,20 +56,35 @@ function splitWords(el) {
 /* ---------- Lettere del titolo che cambiano peso vicino al cursore ---------- */
 function weightHover() {
   const chars = $$('[data-weight] .ch');
-  if (!chars.length || !finePointer || reduceMotion) return;
-  let mx = -9999, my = -9999, raf = 0;
+  const hero = $('.hero');
+  if (!chars.length || !hero || !finePointer || reduceMotion) return;
+  // Le posizioni delle lettere si leggono una volta (e a ogni resize), mai durante il movimento:
+  // niente letture di layout per frame = niente scatti.
+  let centers = [], mx = -9999, my = -9999, raf = 0, visible = true;
+  const measure = () => {
+    chars.forEach((c) => c.style.setProperty('--w', 800));
+    const y = scrollY;
+    centers = chars.map((c) => { const r = c.getBoundingClientRect(); return [r.left + r.width / 2, r.top + y + r.height / 2]; });
+  };
   const update = () => {
     raf = 0;
-    for (const c of chars) {
-      const r = c.getBoundingClientRect();
-      const d = Math.hypot(mx - (r.left + r.width / 2), my - (r.top + r.height / 2));
+    const y = scrollY;
+    chars.forEach((c, i) => {
+      const d = Math.hypot(mx - centers[i][0], my + y - centers[i][1]);
       const k = Math.max(0, 1 - d / 260);
-      c.style.setProperty('--w', Math.round(800 - k * 400));
-      c.style.transform = `translateY(${-k * 10}px)`;
+      c.style.setProperty('--w', Math.round(800 - k * 380));
+      c.style.transform = k ? `translate3d(0, ${(-k * 10).toFixed(1)}px, 0)` : '';
       c.style.color = k > 0.55 ? 'var(--red)' : '';
-    }
+    });
   };
-  addEventListener('pointermove', (e) => { mx = e.clientX; my = e.clientY; if (!raf) raf = requestAnimationFrame(update); }, { passive: true });
+  new IntersectionObserver(([en]) => { visible = en.isIntersecting; }).observe(hero);
+  addEventListener('resize', () => requestAnimationFrame(measure));
+  document.fonts?.ready.then(() => setTimeout(measure, 2500));
+  setTimeout(measure, 2600); // dopo l'animazione d'ingresso delle lettere
+  addEventListener('pointermove', (e) => {
+    mx = e.clientX; my = e.clientY;
+    if (visible && centers.length && !raf) raf = requestAnimationFrame(update);
+  }, { passive: true });
 }
 
 /* ---------- Parole che ruotano nel sottotitolo ---------- */
@@ -97,9 +113,18 @@ function heroLogo() {
   if (!wrap) return;
   const mark = $('.hero__mark', wrap);
   if (finePointer && !reduceMotion) {
+    // Parallasse morbida: il logo insegue il mouse con un'interpolazione, non a scatti.
+    let tx = 0, ty = 0, x = 0, y = 0, running = false;
+    const loop = () => {
+      x = lerp(x, tx, 0.08); y = lerp(y, ty, 0.08);
+      mark.style.setProperty('--mx', x.toFixed(4));
+      mark.style.setProperty('--my', y.toFixed(4));
+      running = Math.abs(x - tx) > 0.0005 || Math.abs(y - ty) > 0.0005;
+      if (running) requestAnimationFrame(loop);
+    };
     addEventListener('pointermove', (e) => {
-      mark.style.setProperty('--mx', ((e.clientX / innerWidth) - 0.5).toFixed(3));
-      mark.style.setProperty('--my', ((e.clientY / innerHeight) - 0.5).toFixed(3));
+      tx = (e.clientX / innerWidth) - 0.5; ty = (e.clientY / innerHeight) - 0.5;
+      if (!running) { running = true; requestAnimationFrame(loop); }
     }, { passive: true });
   }
   const bubble = $('[data-bubble]', wrap);
@@ -173,6 +198,7 @@ function mobileMenu() {
     if (open) { menu.hidden = false; requestAnimationFrame(() => menu.classList.add('is-open')); }
     else { menu.classList.remove('is-open'); setTimeout(() => { if (!menu.classList.contains('is-open')) menu.hidden = true; }, 700); }
     document.body.style.overflow = open ? 'hidden' : '';
+    if (lenis) open ? lenis.stop() : lenis.start();
   };
   btn.addEventListener('click', () => set(btn.getAttribute('aria-expanded') !== 'true'));
   $$('a', menu).forEach((a) => a.addEventListener('click', () => set(false)));
@@ -234,8 +260,12 @@ function work() {
     const run = () => {
       views.forEach((v) => v.setAttribute('aria-pressed', v === b));
       grid.hidden = list; rows.hidden = !list;
+      lenis?.resize();
     };
     if (document.startViewTransition && !reduceMotion) document.startViewTransition(run); else run();
+    // Riporto in cima alla sezione, così il cambio di vista si vede subito.
+    const top = $('#lavori');
+    if (top && top.getBoundingClientRect().top < -40) window.__scrollToTarget?.(top);
   }));
 
   // Anteprima immagine che segue il cursore nella vista lista
@@ -400,14 +430,58 @@ function lightbox() {
   if (imgs.length < 2) $$('.lightbox__nav', dlg).forEach((b) => (b.hidden = true));
 }
 
+/* ---------- Scroll fluido (Lenis) + ancore morbide ---------- */
+let lenis = null;
+function smoothScroll() {
+  if (!reduceMotion) {
+    lenis = new Lenis({ lerp: 0.09, wheelMultiplier: 0.9, smoothWheel: true });
+    const raf = (t) => { lenis.raf(t); requestAnimationFrame(raf); };
+    requestAnimationFrame(raf);
+  }
+  const go = (target) => {
+    const navH = $('[data-nav]')?.offsetHeight || 0;
+    if (lenis) lenis.scrollTo(target, { offset: target === 0 ? 0 : -navH + 4, duration: 1.6, easing: (t) => 1 - Math.pow(1 - t, 4) });
+    else (target === 0 ? scrollTo(0, 0) : target.scrollIntoView());
+  };
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href*="#"]');
+    if (!a || e.defaultPrevented) return;
+    const url = new URL(a.href, location.href);
+    if (url.pathname !== location.pathname || !url.hash) return;
+    const el = document.getElementById(decodeURIComponent(url.hash.slice(1)));
+    if (!el) return;
+    e.preventDefault();
+    history.replaceState(null, '', url.hash);
+    go(el);
+  });
+  // Arrivando da un'altra pagina con #ancora, scendo con calma invece di saltare.
+  if (location.hash) {
+    const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (el) setTimeout(() => go(el), 350);
+  }
+  window.__scrollToTarget = go;
+}
+
+/* ---------- Anni aggiornati da soli ---------- */
+function years() {
+  const now = new Date().getFullYear();
+  $$('[data-year-now]').forEach((el) => (el.textContent = now));
+  $$('[data-years-since]').forEach((el) => {
+    const n = now - Number(el.dataset.yearsSince);
+    el.dataset.count = n; el.textContent = n;
+  });
+}
+
 /* ---------- Varie ---------- */
 function misc() {
-  $('[data-totop]')?.addEventListener('click', () => scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' }));
+  $('[data-totop]')?.addEventListener('click', () => window.__scrollToTarget?.(0));
   // Piccolo saluto per chi apre la console (sei un designer curioso?)
   console.log('%c MDG %c Dove le idee prendono forma. → ' + location.origin, 'background:#ec6648;color:#fff;font-weight:800;padding:4px 8px;border-radius:4px', 'color:#c83f43;font-weight:700');
 }
 
 $$('[data-split]').forEach(splitChars);
+years();
+smoothScroll();
 intro();
 reveals();
 weightHover();

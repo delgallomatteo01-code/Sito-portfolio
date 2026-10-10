@@ -10,7 +10,7 @@
     "country": "IT",
     "tagline": "Dove le idee prendono forma.",
     "description": "Matteo Del Gallo, graphic e web designer in Umbria: identità visive, logo design, campagne social e display, poster e siti web chiari, funzionali e coerenti.",
-    "since": 2022
+    "since": 2020
   },
   "contact": {
     "email": "mdelgallo.design@gmail.com",
@@ -28,11 +28,31 @@
     "linkedin": ""
   },
   "categories": [
-    { "id": "branding", "label": "Branding & Product design", "short": "Branding" },
-    { "id": "logo", "label": "Logofolio", "short": "Logo" },
-    { "id": "social", "label": "Social & Display ads", "short": "Social & Ads" },
-    { "id": "illustration", "label": "Illustrations & Posters", "short": "Poster" },
-    { "id": "web", "label": "Web & UI design", "short": "Web & UI" }
+    {
+      "id": "branding",
+      "label": "Branding & Product design",
+      "short": "Branding"
+    },
+    {
+      "id": "logo",
+      "label": "Logofolio",
+      "short": "Logo"
+    },
+    {
+      "id": "social",
+      "label": "Social & Display ads",
+      "short": "Social & Ads"
+    },
+    {
+      "id": "illustration",
+      "label": "Illustrations & Posters",
+      "short": "Poster"
+    },
+    {
+      "id": "web",
+      "label": "Web & UI design",
+      "short": "Web & UI"
+    }
   ],
   "behance": {
     "enabled": true,
@@ -54,6 +74,24 @@
     "model": "claude-opus-5-5",
     "effort": "medium",
     "maxImagesToAnalyze": 4,
-    "focusKeywords": ["graphic designer Umbria", "logo design", "brand identity", "grafico freelance", "web designer"]
-  }
+    "focusKeywords": [
+      "graphic designer Umbria",
+      "logo design",
+      "brand identity",
+      "grafico freelance",
+      "web designer"
+    ]
+  },
+  "marquee": [
+    "Branding & Product design",
+    "Logo design",
+    "Meta & Google Ads",
+    "Social media design",
+    "Packaging",
+    "Web & UI design",
+    "Poster & illustrazione",
+    "Editorial & stampa",
+    "Motion & video editing",
+    "Brand identity"
+  ]
 }

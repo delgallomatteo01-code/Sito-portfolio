@@ -16,7 +16,7 @@ const STEPS = [
   ['Ascolto', 'Partiamo da una chiacchierata: obiettivi, pubblico, tempi. Faccio domande finché il problema non è chiaro.'],
   ['Concept', 'Schizzi, ricerche e moodboard. Esploro più direzioni e ti mostro quelle che funzionano davvero.'],
   ['Design', 'Sviluppo la direzione scelta con cura per gerarchia, tipografia e colore, su ogni formato che serve.'],
-  ['Consegna', 'File pronti per stampa e digitale, linee guida essenziali e supporto anche dopo la consegna.'],
+  ['Consegna', 'File pronti per stampa, web e social: contenuti digitali ottimizzati per ogni piattaforma, linee guida essenziali e supporto anche dopo la consegna.'],
 ];
 
 export function homePage(ctx) {
@@ -40,13 +40,13 @@ export function homePage(ctx) {
       <a class="btn btn--ghost" href="#contatti" data-magnetic>Scrivimi</a>
     </div>
     <a class="badge" href="#lavori" aria-label="Scorri fino ai lavori" data-badge>
-      <svg viewBox="0 0 200 200" class="badge__ring" aria-hidden="true"><defs><path id="ring" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#ring" startOffset="0">graphic design · ${config.site.since} — ${year} · web design · </textPath></text></svg>
+      <svg viewBox="0 0 200 200" class="badge__ring" aria-hidden="true"><defs><path id="ring" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#ring" startOffset="0">graphic design · ${config.site.since} — <tspan data-year-now>${year}</tspan> · web design · </textPath></text></svg>
       ${logoSvg({ cls: 'badge__logo', mono: true })}
     </a>
   </div>
 </section>`;
 
-  const marqueeItems = [...config.categories.map((c) => c.label), 'Dove le idee prendono forma'];
+  const marqueeItems = config.marquee || config.categories.map((c) => c.label);
   const marquee = `<div class="marquee-wrap"><div class="marquee" aria-hidden="true" data-marquee><div class="marquee__track">${[0, 1].map(() => `<span>${marqueeItems.map((t) => `${e(t)}<i>✦</i>`).join('')}</span>`).join('')}</div></div></div>`;
 
   const cards = projects.map((p, i) => {
@@ -103,7 +103,7 @@ export function homePage(ctx) {
     <p data-reveal>Sono un graphic designer con sede in ${e(config.site.region)}, specializzato nella progettazione di sistemi visivi chiari, funzionali e coerenti.</p>
     <p data-reveal>Appassionato di graphic design fin da bambino, oggi mi occupo di identità visive, contenuti digitali e campagne di comunicazione, con una particolare attenzione alla struttura, alla coerenza e alla chiarezza del messaggio.</p>
     <ul class="stats" data-reveal>
-      <li><b data-count="${yearsActive}">${yearsActive}</b><span>anni di design</span></li>
+      <li><b data-count="${yearsActive}" data-years-since="${config.site.since}">${yearsActive}</b><span>anni di design</span></li>
       <li><b data-count="${projects.length}">${projects.length}</b><span>progetti online</span></li>
       <li><b data-count="${CERTS.length}">${CERTS.length}</b><span>certificazioni Adobe</span></li>
     </ul>
@@ -111,7 +111,7 @@ export function homePage(ctx) {
   <div class="about__photo" data-tilt>
     <div class="about__shape" aria-hidden="true"></div>
     <img src="${base}assets/portrait.webp" width="686" height="634" alt="Ritratto di ${e(config.site.name)} con una reflex al collo" loading="lazy" decoding="async">
-    <span class="sticker" aria-hidden="true">Adobe Certified<br>Professional</span>
+    <span class="sticker" aria-hidden="true"><span>Adobe</span><span>Certified</span><span>Professional</span></span>
   </div>
   <div class="about__side">
     <h3>Certificati</h3>
@@ -152,7 +152,7 @@ export function homePage(ctx) {
 </section>`;
 
   const services = ['Logo', 'Brand identity', 'Social & ads', 'Poster', 'Sito web', 'Altro'];
-  const budgets = ['< 1.000 €', '1.000 – 3.000 €', '> 3.000 €', 'Da definire'];
+  const budgets = ['< 100 €', '< 500 €', '< 1.000 €', '> 1.000 €', 'Non ne ho idea'];
   const form = config.contact.form;
   const contact = `<section class="contact" id="contatti" aria-labelledby="contact-title">
   ${cropMarks}
@@ -180,7 +180,7 @@ export function homePage(ctx) {
     <div class="field"><input id="f-company" name="azienda" autocomplete="organization" placeholder=" "><label for="f-company">Azienda o progetto</label></div>
     <fieldset class="chips chips--small">
       <legend>Budget indicativo</legend>
-      ${budgets.map((b, i) => `<label class="chip-check"><input type="radio" name="budget" value="${e(b)}"${i === 3 ? ' checked' : ''}><span>${e(b)}</span></label>`).join('')}
+      ${budgets.map((b, i) => `<label class="chip-check"><input type="radio" name="budget" value="${e(b)}"${i === budgets.length - 1 ? ' checked' : ''}><span>${e(b)}</span></label>`).join('')}
     </fieldset>
     <div class="field field--area"><textarea id="f-msg" name="messaggio" rows="5" required placeholder=" "></textarea><label for="f-msg">Raccontami il progetto *</label></div>
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">

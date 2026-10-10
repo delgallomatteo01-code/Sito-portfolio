@@ -8,7 +8,7 @@ const DIST = path.join(ROOT, 'dist');
 const config = await loadConfig();
 const base = new URL((process.env.SITE_URL || config.site.url).replace(/\/$/, '') + '/').pathname;
 const PORT = process.env.PORT || 4321;
-const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2', '.xml': 'application/xml', '.txt': 'text/plain', '.json': 'application/json' };
+const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.mjs': 'text/javascript', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2', '.xml': 'application/xml', '.txt': 'text/plain', '.json': 'application/json' };
 
 createServer(async (req, res) => {
   let url = decodeURIComponent(new URL(req.url, 'http://x').pathname);

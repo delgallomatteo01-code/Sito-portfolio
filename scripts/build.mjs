@@ -50,6 +50,8 @@ async function hashedAsset(src, name, ext) {
   return file;
 }
 await cp(path.join(ROOT, 'src/assets'), path.join(DIST, 'assets'), { recursive: true, filter: (f) => !f.endsWith('logo-paths.json') });
+await mkdir(path.join(DIST, 'assets/vendor'), { recursive: true });
+await cp(path.join(ROOT, 'node_modules/lenis/dist/lenis.mjs'), path.join(DIST, 'assets/vendor/lenis.js'));
 const assets = { css: await hashedAsset('src/css/main.css', 'main', 'css'), js: await hashedAsset('src/js/main.js', 'main', 'js') };
 
 // ---------- immagini responsive ----------
