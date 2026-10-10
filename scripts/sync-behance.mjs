@@ -20,6 +20,17 @@ if (!opts?.enabled) {
 
 const FEED = `https://www.behance.net/feeds/user?username=${encodeURIComponent(opts.username)}`;
 
+/** Copertina alla risoluzione più alta disponibile (original → max_808 → quella del feed). */
+async function downloadCover(coverUrl, folder) {
+  const candidates = ['original', 'max_808'].map((size) => coverUrl.replace(/\/projects\/[^/]+\//, `/projects/${size}/`)).concat(coverUrl);
+  for (const url of [...new Set(candidates)]) {
+    try {
+      return await downloadImage(url, folder, '01');
+    } catch (_) { /* provo la dimensione successiva */ }
+  }
+  throw new Error('copertina non scaricabile');
+}
+
 export function parseFeed(xml) {
   const parser = new XMLParser({ ignoreAttributes: false, cdataPropName: false });
   const data = parser.parse(xml);
@@ -82,6 +93,17 @@ async function main() {
     const current = existing.get(id);
 
     if (current) {
+      // Behance blocca la pagina progetto ai server di GitHub: se abbiamo solo una copertina piccola, provo a prenderla più grande.
+      if (item.cover && current.images.length === 1 && current.images[0].width < 1000) {
+        try {
+          const img = await downloadCover(item.cover, id);
+          if (img.width > current.images[0].width) {
+            current.images = [{ ...img, alt: current.images[0].alt }];
+            await saveProject(current);
+            log.ok(`Copertina in alta risoluzione: ${item.title} (${img.width}px)`);
+          }
+        } catch (_) { /* resta quella attuale */ }
+      }
       // Aggiorna solo i testi originali: la SEO verrà rigenerata se cambiano.
       if (current.original.title !== item.title || (item.description && current.original.description !== item.description && !current.original.fromPage)) {
         current.original.title = item.title;
@@ -99,14 +121,16 @@ async function main() {
       log.warn(`Pagina progetto non leggibile (${item.title}): ${err.message}`);
     }
 
-    const urls = page.images.length ? page.images : [item.cover?.replace(/\/projects\/\d+\//, '/projects/max_808/')].filter(Boolean);
     const images = [];
-    for (const [i, url] of urls.slice(0, opts.maxImagesPerProject).entries()) {
+    for (const [i, url] of page.images.slice(0, opts.maxImagesPerProject).entries()) {
       try {
         images.push(await downloadImage(url, id, String(i + 1).padStart(2, '0')));
       } catch (err) {
         log.warn(`Immagine saltata (${url}): ${err.message}`);
       }
+    }
+    if (!images.length && item.cover) {
+      try { images.push(await downloadCover(item.cover, id)); } catch (err) { log.warn(`${item.title}: ${err.message}`); }
     }
     if (!images.length) {
       log.warn(`Nessuna immagine per "${item.title}", progetto saltato (riproverò al prossimo giro).`);

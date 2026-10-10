@@ -11,7 +11,7 @@
   },
   "category": "branding",
   "featured": false,
-  "hidden": false,
+  "hidden": true,
   "images": [
     {
       "src": "behance-169432149/01.webp",
@@ -33,5 +33,6 @@
     "sourceHash": "e1c1771c6706b342",
     "model": "fallback",
     "generatedAt": "2026-10-10T10:09:05.194Z"
-  }
+  },
+  "hiddenReason": "Doppione di un progetto già presente nel portfolio"
 }
